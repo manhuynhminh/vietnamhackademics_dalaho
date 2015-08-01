@@ -15,22 +15,43 @@
 			<label id="title"></label>
           </h2>
 		<label id="result">
-			<?php 
-				if (isset($_GET['btn_submit'])) { echo "result today: ".$_GET['your_number']."<br/><br/>"; }
+						<?php 
+						// fomular
+						if (isset($_GET['btn_submit'])) 
+						{ 
+							$temp = (int)$_GET['your_number'];
+							
+							$datefile = fopen("days/file_date.txt","r");
+							$valuedate = fgets($datefile);
+							if($valuedate < 1)
+							{
+								echo "Result date ".$valuedate.": ".$temp."%<br/><br/>"; 
+								$filetemp = fopen("result.txt","w");
+								fwrite($filetemp,$temp);
+								fclose($filetemp);
+							}
+							else
+							{
+								$filetemp = fopen("result.txt","r");
+								$oldresult = fgets($filetemp);
+								$newresult = (int)($oldresult + $temp)/2;//wrong fomular >.< @!%
+								echo "Result date ".$valuedate.": ".$newresult."%<br/><br/>";
+								fclose($filetemp);
+								$filetemp = fopen("result.txt","w");
+								fwrite($filetemp,$newresult);
+								fclose($filetemp);									
+							}
+				
+				
+						echo "You should be try to learn :) ";  //xuat cau khuyen ran (call the advice from database)
+						}
+					else
+						echo "Your preview result is good, but you can try to better >_>";	
 			?>
-		</label>
-		<label id="motivate">
-			<?php
-				if (isset($_GET['btn_submit']))
-				{ 				
-					?><br/><br/><?php
-					echo "You should be (call the advice from database)";  //xuat cau khuyen ran
-				}
-				else
-					echo "Your preview result is good, but you can try to better >_>";	
-			?>
-		</label>
+		<br><br><br><br><br><br><br><br><br><br>
+		 <bottom> <a href="mainpage.php" text-align:bottom >Return main page</a></bottom>
 	</div>
+  
 </body>
 </html>
 <script type="text/javascript">

@@ -16,6 +16,9 @@
                   $datesys = date('d/m/Y');
                   $dataapp = (int)($datesys - date('01/08/2015'));
                   echo $dataapp;
+				  $filedate = fopen("days/file_date.txt","w");
+				  fwrite($filedate,$dataapp);
+				  fclose($filedate);
               ?> days </a>        
         </div>
 		<br/>
