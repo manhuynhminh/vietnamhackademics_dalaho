@@ -7,7 +7,7 @@ html {
 }
 body {
     height: 100%;
-    background: #FFF;
+    background-color: #F5F5F5;
     font: 13px/23px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #454545;
     -webkit-font-smoothing: antialiased;
@@ -818,6 +818,9 @@ img {
     height: 100%;
 }
 #section4 h2 {
+    position:absolute;
+	top:15%;
+	left:45%;
     color: #baca34;
     font-size: 40px;
     line-height: 1.5;
@@ -857,7 +860,7 @@ img {
     border-width: 0;
     border-bottom: 4px solid #2ea251;
     font-size: 22px;
-    margin-top:10px;
+    margin-top:30px;
 }
 #section4 .btnSubmit:hover {
     background: #2ea251;
@@ -1411,7 +1414,17 @@ div.sb-message a:visited {
     z-index: 1000;
     cursor: pointer
 }
-
+#wrapp{
+	position:relative;
+	overflow:hidden;
+	margin:0 auto;
+	width:768px;
+	height:620px;
+	background-color:#F5F5F5;
+	background:url(../images/bg.png) no-repeat center;
+	border-left:2px solid #baca34;
+	border-right:2px solid #baca34;
+}
 
 .gauge_2, .gauge_1 {
 	position:absolute;
