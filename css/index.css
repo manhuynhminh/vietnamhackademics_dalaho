@@ -842,6 +842,30 @@ img {
     background: url('../images/bg.png') no-repeat center;
 }
 
+#section4 .btnSubmit {
+    font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
+    display: inline-block;
+    width: 150px;
+    height: 40px;
+    line-height: 30px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+    color: #dcdcbd;
+    background: #3bc765;
+    border-width: 0;
+    border-bottom: 4px solid #2ea251;
+    font-size: 22px;
+    margin-top:10px;
+}
+#section4 .btnSubmit:hover {
+    background: #2ea251;
+    height: 38px;
+    margin-top: 4px;
+    line-height: 30px;
+}
+
 .total_vote, .your_vote {
 	top:20px;
 	left:20px;
@@ -1391,9 +1415,8 @@ div.sb-message a:visited {
 
 .gauge_2, .gauge_1 {
 	position:absolute;
-	margin-top:40px;
-	top:40%;
-	left:70px;
+	margin-top:10%;
+    margin-left: 30%;
 	background:url(../images/bg_gauge.png) no-repeat center;
 	height: 661px;
 	width: 629px;
