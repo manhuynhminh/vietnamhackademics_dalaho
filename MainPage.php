@@ -11,22 +11,20 @@
         <h2>Learning Goal</h2>
         <div><input type="text" name ="title_wish" class="textbox" readonly value="<?php echo $_GET['title_wish'] ?>"/></div>
         <br/>
-        <div id="times">
-          <a href="index.php">
-			  <?php 
+        <div id="times" color = "green">
+			 <a href="days/(<?php echo rand(1,21) ?>).txt"><?php 
                   date_default_timezone_set('Asia/Ho_Chi_Minh');
                   $datesys = date('d/m/Y');
                   $dataapp = (int)($datesys - date('01/08/2015'));
                   echo $dataapp;
-              ?> days
+              ?> days </a>
            </a>
           <img />
         </div>
 		<br/>
 		<div id="buttondiv">
 			<a href="rate.html"><input type="button" name="resultbutton" value="Result" class="btnResult" /> </a>
-            
-          
+       
 			<a href="result.php"><input type="button" name="reportbutton" value="Report" class="btnReport" />
             
 		</div>
