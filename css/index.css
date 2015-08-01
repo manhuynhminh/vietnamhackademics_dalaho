@@ -676,13 +676,13 @@ img {
     color: #2ea251
 }
 #section2 {
-    text-align: center;
+    text-align: center;            
     background: #182f40;
     height: 100%
 }
 #section2 h2 {
     color: #fff;
-    line-height: 1.5
+    line-height: 1.5;
 }
 #section2 h2 strong {
     text-shadow: 1px 1px 0 #8afaac
@@ -705,7 +705,8 @@ img {
     color: #96b1ac;
 }
 #section2 {
-    padding-top: 50px
+    padding-top: 10%;
+    background: url('../images/bg.png') no-repeat center;
 }
 #section2 .btnSubmit {
     font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
