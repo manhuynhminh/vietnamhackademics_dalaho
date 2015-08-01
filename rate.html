@@ -8,20 +8,22 @@
 <head>
 	<title>Rate</title>
 </head>
-<body>
-    <div class="your_vote">Learning PHP</div>
-    <form class="data" name="form_rate" action="result.php">
-        <div class="gauge_1">
-            <div class="indicator_1">
-                <div class="bar_second_1"></div>
+<body id="mainsite">
+    <div id="section4" class="section">
+        <h2>Learning PHP</h2>
+        <form class="data" name="form_rate" action="result.php">
+            <div class="gauge_1">
+                <div class="indicator_1">
+                    <div class="bar_second_1"></div>
+                </div>
+                <div class="your_input">
+                    <input class="input_style intput_1" id="your_rate" name="your_number" type="number" placeholder="Performance/Day" onkeyup="this.value = minmax(this.value, 0, 100)" />
+                    <br />
+                    <input class="btnSubmit" type="button" name="submit_button_rate" value="submit" onclick="javascript:Confirm()" />
+                </div>
             </div>
-            <div class="your_input">
-                <input class="input_style intput_1" id="your_rate" name="your_number" type="number" placeholder="Performance/Day" onkeyup="this.value = minmax(this.value, 0, 100)" />
-                <br />                
-                <input class="btnSubmit" type="button" name="submit_button_rate" value="submit" onclick="javascript:Confirm()" />
-            </div>
-        </div>
-    </form>
+        </form>
+    </div>
 </body>
  </html>
 
