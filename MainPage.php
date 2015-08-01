@@ -35,6 +35,7 @@
 ?>
 <?php $GLOBALS["title_wisss"] = $_GET['title_wish']; ?>
 <script type="text/javascript">
-	var dataToStore = JSON.stringify(<?php echo $GLOBALS["title_wisss"] ?>);
+	var dataToStore = JSON.stringify('<?php echo $GLOBALS["title_wisss"] ?>');
+	localStorage.removeItem('LearningTitle')
 	localStorage.setItem('LearningTitle', dataToStore);
 </script>
