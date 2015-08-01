@@ -701,14 +701,14 @@ img {
 #section2 .slide1 .eventhelp {
     padding: 10px;
     font-size: 11px;
-    font-style: italic
+    font-style: italic;
+    color: #96b1ac;
 }
 #section2 {
     padding-top: 50px
 }
 #section2 .btnSubmit {
     font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
-
     display: block;
     margin: auto;
     width: 180px;
@@ -723,7 +723,6 @@ img {
     border-width: 0;
     border-bottom: 4px solid #2ea251;
     font-size: 22px;
-    padding: 10px;
 }
 #section2 .btnSubmit:hover {
     background: #2ea251;
