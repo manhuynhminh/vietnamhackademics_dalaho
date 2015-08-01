@@ -60,7 +60,6 @@ p img {
 p.lead {
     font-size: 21px;
     line-height: 27px;
-    color: #77777
 }
 em {
     font-style: italic
@@ -742,6 +741,44 @@ img {
 #section2-links a:hover {
     color: #2ea251
 }
+#section3 {
+    text-align: center;            
+    background: #182f40;
+    height: 100%
+}
+#section3 h2 {
+    color: #fff;
+    font-size: 40px;
+    line-height: 1.5;
+}
+#section3 h2 strong {
+    text-shadow: 1px 1px 0 #8afaac
+}
+
+#section3 .textbox {
+    text-align: center;
+    border-radius: 40px;
+    -webkit-border-radius: 40px;
+    height: 40px;
+    font-size: 20px;
+    width: 400px;
+    max-width: 60%;
+    border: 0px solid #fff;
+    padding: 10px 20px;
+    color: #0b1ac2;
+}
+
+#section3 {
+    padding-top: 10%;
+    background: url('../images/bg.png') no-repeat center;
+}
+
+#times a{
+    font-size: 32px;
+    color: #d03221;
+    padding-top: 50px;
+}
+
 .startarrow {
     width: 0;
     height: 0;
