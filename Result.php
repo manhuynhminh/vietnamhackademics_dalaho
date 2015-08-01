@@ -12,57 +12,71 @@
 <body id="mainsite" onload="initTitle()">
 	<div id="section5" class="section">
 		 <h2> 
-			<label id="title"></label>
+			<label id="lblTitle"></label>
           </h2>
+          <br/>
 		<label id="result">
-						<?php 
-						// fomular
-						if (isset($_GET['btn_submit'])) 
-						{ 
-							$temp = (int)$_GET['your_number'];
+			<?php 
+				// fomular
+				if (isset($_GET['btn_submit'])) 
+				{ 
+					$temp = (int)$_GET['your_number'];
 							
-							$datefile = fopen("days/file_date.txt","r");
-							$valuedate = fgets($datefile);
-							if($valuedate < 1)
-							{
-								echo "Result date ".$valuedate.": ".$temp."%<br/><br/>"; 
-								$filetemp = fopen("result.txt","w");
-								fwrite($filetemp,$temp);
-								fclose($filetemp);
-							}
-							else
-							{
-								$filetemp = fopen("result.txt","r");
-								$oldresult = fgets($filetemp);
-								$newresult = (int)($oldresult + $temp)/2;//wrong fomular >.< @!%
-								echo "Result date ".$valuedate.": ".$newresult."%<br/><br/>";
-								fclose($filetemp);
-								$filetemp = fopen("result.txt","w");
-								fwrite($filetemp,$newresult);
-								fclose($filetemp);									
-							}
-				
-				
-						echo "You should be try to learn :) ";  //xuat cau khuyen ran (call the advice from database)
-						}
+					$datefile = fopen("days/file_date.txt","r");
+					$valuedate = fgets($datefile);
+					if($valuedate < 1)
+					{
+						echo "Result date ".$valuedate.": ".$temp."%<br/><br/>"; 
+						$filetemp = fopen("result.txt","w");
+						fwrite($filetemp,$temp);
+						fclose($filetemp);
+					}
 					else
 					{
 						$filetemp = fopen("result.txt","r");
 						$oldresult = fgets($filetemp);
-						
-						echo "Old Result: ".$oldresult."%<br/><br/>";
+						$newresult = (int)($oldresult + $temp)/2;//wrong fomular >.< @!%
+						echo "Result date ".$valuedate.": ".$newresult."%<br/><br/>";
 						fclose($filetemp);
-						echo "Your preview result is good, but you can try to better >_>";	
-					}
+						$filetemp = fopen("result.txt","w");
+						fwrite($filetemp,$newresult);
+						fclose($filetemp);									
+					}			
+				}
+				else
+				{
+					$filetemp = fopen("result.txt","r");
+					$oldresult = fgets($filetemp);
+					
+					echo "Old Result: ".$oldresult."%<br/><br/>";
+					fclose($filetemp);
+				}
 			?>
-		<br><br><br><br><br><br><br><br><br><br>
-		 <bottom> <a href="mainpage.php" text-align:bottom >Return main page</a></bottom>
+            <br/>
+            <label id="motivate">
+            <?php 
+				if (isset($_GET['btn_submit'])) 
+				{ 
+					echo "You should be try to learn :) ";  //xuat cau khuyen ran (call the advice from database)
+				}
+				else
+				{				
+					echo "Your preview result is good, but you can try to better >_>";	
+				}
+			?>			
+            <div id="btnDiv">
+              		<input type="button" name="resultbutton" value="Home" class="btnBack" onClick="goBack()" /> 
+            </div>
 	</div>
-  
+
 </body>
 </html>
 <script type="text/javascript">
     function initTitle() {
-        document.getElementById('title').innerHTML = JSON.parse(localStorage.getItem('LearningTitle'));
+        document.getElementById('lblTitle').innerHTML = JSON.parse(localStorage.getItem('LearningTitle'));
     }
+	
+	function goBack() {
+		window.location.href = "inputwish.html";
+	}
 </script>

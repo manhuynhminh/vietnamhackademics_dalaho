@@ -1509,25 +1509,23 @@ div.sb-message a:visited {
 }
 
 #section5 #result {
-    position: absolute;
+    position: relative;
     text-align: center;
     font-size: 25px;
-    text-wrap:normal;
-    display:block;
     color: #d03221;
-    margin-top: 5%;
-    margin-left: 30%;
+    display:block;
+    float:left;
+    margin-top: 2%;
+    margin-left: 25%;
 }
 
 #section5 #motivate {
-    position: absolute;
+    position: relative;
     text-align: center;
     font-size: 25px;
-    text-wrap:normal;
-    display:block;
     color: #4169E1;
-    margin-top: 5%;
-    margin-left: 30%;
+    margin-top: 1%;
+    margin-left: 5%;
 }
 
 #section5 h2 {
@@ -1546,4 +1544,27 @@ div.sb-message a:visited {
 #section5 {
     padding-top: 10%;
     background: url('../images/bg.png') no-repeat center;
+}
+
+#section5 .btnBack { 
+	width:170px !important;
+	min-width: 170px;
+	display: inline-block;
+	background: #ff8000;
+	border: 0;
+	padding:10px;
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+	cursor: pointer;
+	transition: background .3s;
+	-webkit-transition: background .3s;
+	border-radius: 2px;
+	font-size: 20px;
+	line-height: inherit;
+	margin-top:120px; margin-left:50px;
+}
+#section5 .btnBack:hover {
+	background: #d16900;
+	color: #fff;
 }
