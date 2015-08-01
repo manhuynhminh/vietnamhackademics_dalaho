@@ -16,10 +16,9 @@
 		echo "result today: ".$_GET['your_rate']."<br/>";
 		echo "You should be (call the advice from database)";
 	}
-	if (isset($_POST['btsubmit_report']))
-	{
+	else
 		echo "Your preview result is good, but you can try to better >_>";
-	}
+	
 ?>
 
 </body>

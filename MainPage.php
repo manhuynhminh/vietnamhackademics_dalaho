@@ -24,8 +24,11 @@
         </div>
 		<br/>
 		<div id="buttondiv">
-			<input type="button" name="resultbutton" value="Result" class="btnResult" />
-			<input type="button" name="reportbutton" value="Report" class="btnReport" />
+			<a href="rate.html"><input type="button" name="resultbutton" value="Result" class="btnResult" /> </a>
+            
+          
+			<a href="result.php"><input type="button" name="reportbutton" value="Report" class="btnReport" />
+            
 		</div>
      </div>
 </body>
