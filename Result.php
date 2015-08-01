@@ -23,7 +23,7 @@
 			<?php
 				if (isset($_GET['btn_submit']))
 				{ 				
-					?><br/><?php
+					?><br/><br/><?php
 					echo "You should be (call the advice from database)";  //xuat cau khuyen ran
 				}
 				else
