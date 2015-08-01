@@ -18,7 +18,7 @@
                   $datesys = date('d/m/Y');
                   $dataapp = (int)($datesys - date('01/08/2015'));
                   echo $dataapp;
-              ?> day
+              ?> days
            </a>
           <img />
         </div>
