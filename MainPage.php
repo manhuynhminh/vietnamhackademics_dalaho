@@ -8,8 +8,7 @@
 </head>
 <body id="mainsite">
      <div id="section3" class="section">
-        <h2>Learning Goal</h2>
-        <div><input type="text" name ="title_wish" class="textbox" readonly value="<?php echo $_GET['title_wish'] ?>"/></div>
+        <h2><?php echo $_GET['title_wish'] ?></h2>        
         <br/>
         <div id="times" color = "green">
 			 <a href="days/(<?php echo rand(1,21) ?>).txt"><?php 
@@ -17,7 +16,13 @@
                   $datesys = date('d/m/Y');
                   $dataapp = (int)($datesys - date('01/08/2015'));
                   echo $dataapp;
+<<<<<<< HEAD
               ?> days </a>
+=======
+              ?> 
+			  <br>
+			  days
+>>>>>>> 53068fdaf61253c18fb136ad6c3af6e19bbb8541
            </a>
           <img />
         </div>
