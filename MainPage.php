@@ -28,14 +28,7 @@
      </div>
 </body>
 </html>
-<?php 
-	$writefiel = fopen("title.txt","w");
-	fwrite($writefiel,$_GET['title_wish']);
-	fclose($writefiel);
-?>
-<?php $GLOBALS["title_wisss"] = $_GET['title_wish']; ?>
 <script type="text/javascript">
-	var dataToStore = JSON.stringify('<?php echo $GLOBALS["title_wisss"] ?>');
-	localStorage.removeItem('LearningTitle')
+	var dataToStore = JSON.stringify('<?php echo $_GET['title_wish'] ?>');
 	localStorage.setItem('LearningTitle', dataToStore);
 </script>

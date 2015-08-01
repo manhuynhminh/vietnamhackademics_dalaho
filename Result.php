@@ -9,14 +9,11 @@
 <head>
 	<title>Result</title>
 </head>
-<body id="mainsite">
+<body id="mainsite" onload="initTitle()">
 	<div id="section5" class="section">
-		<h2>  <?php 
-					$writefiel = fopen("title.txt","r");
-						echo fgets($writefiel);
-					fclose($writefiel);
-				?> 
-                </h2>
+		 <h2> 
+			<label id="title"></label>
+          </h2>
 		<label>
 		<?php 
 			if (isset($_GET['btn_submit']))
@@ -30,5 +27,9 @@
 		</label>
 	</div>
 </body>
-
 </html>
+<script type="text/javascript">
+    function initTitle() {
+        document.getElementById('title').innerHTML = JSON.parse(localStorage.getItem('LearningTitle'));
+    }
+</script>
