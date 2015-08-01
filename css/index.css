@@ -820,7 +820,7 @@ img {
 #section4 h2 {
     position:absolute;
 	top:15%;
-	left:45%;
+	left: 40%;
     color: #baca34;
     font-size: 40px;
     line-height: 1.5;
@@ -1429,7 +1429,7 @@ div.sb-message a:visited {
 .gauge_2, .gauge_1 {
 	position:absolute;
 	margin-top:10%;
-    margin-left: 30%;
+    margin-left: 25%;
 	background:url(../images/bg_gauge.png) no-repeat center;
 	height: 661px;
 	width: 629px;
