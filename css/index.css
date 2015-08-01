@@ -1507,6 +1507,29 @@ div.sb-message a:visited {
     background: #182f40;
     height: 100%;
 }
+
+#section5 #result {
+    position: absolute;
+    text-align: center;
+    font-size: 25px;
+    text-wrap:normal;
+    display:block;
+    color: #d03221;
+    margin-top: 5%;
+    margin-left: 30%;
+}
+
+#section5 #motivate {
+    position: absolute;
+    text-align: center;
+    font-size: 25px;
+    text-wrap:normal;
+    display:block;
+    color: #4169E1;
+    margin-top: 5%;
+    margin-left: 30%;
+}
+
 #section5 h2 {
     position:absolute;
 	top:15%;
@@ -1519,14 +1542,6 @@ div.sb-message a:visited {
     text-shadow: 1px 1px 0 #8afaac
 }
 
-#section5 label {
-    text-align: center;
-    font-size: 25px;
-    text-wrap:normal;
-    display:block;
-    color: #4169E1;
-    margin-top: 5%;
-}
 
 #section5 {
     padding-top: 10%;

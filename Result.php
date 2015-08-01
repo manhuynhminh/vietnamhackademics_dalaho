@@ -14,16 +14,21 @@
 		 <h2> 
 			<label id="title"></label>
           </h2>
-		<label>
-		<?php 
-			if (isset($_GET['btn_submit']))
-			{ 
-				echo "result today: ".$_GET['your_number']."<br/><br/>"; //xuat kqua
-				echo "You should be (call the advice from database)";  //xuat cau khuyen ran
-			}
-			else
-				echo "Your preview result is good, but you can try to better >_>";	
-		?>
+		<label id="result">
+			<?php 
+				if (isset($_GET['btn_submit'])) { echo "result today: ".$_GET['your_number']."<br/><br/>"; }
+			?>
+		</label>
+		<label id="motivate">
+			<?php
+				if (isset($_GET['btn_submit']))
+				{ 				
+					?><br/><?php
+					echo "You should be (call the advice from database)";  //xuat cau khuyen ran
+				}
+				else
+					echo "Your preview result is good, but you can try to better >_>";	
+			?>
 		</label>
 	</div>
 </body>
