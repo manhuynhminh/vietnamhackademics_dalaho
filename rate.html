@@ -10,7 +10,12 @@
 </head>
 <body id="mainsite">
     <div id="section4" class="section">
-            <h2>Learning PHP</h2>
+            <h2>		<?php 
+								$writefiel = fopen("title.txt","r");
+								echo fgets($writefiel);
+								fclose($writefiel);
+								?>				
+			</h2>
             <form class="data" name="form_rate" action="result.php">
                 <div class="gauge_1">
                     <div class="indicator_1">
@@ -19,7 +24,7 @@
                     <div class="your_input">
                         <input class="input_style intput_1" id="your_rate" name="your_number" type="number" placeholder="Performance/Day" onkeyup="this.value = minmax(this.value, 0, 100)" />
                         <br />
-                        <input class="btnSubmit" type="button" name="submit_button_rate" value="submit" onclick="javascript:Confirm()" />
+                       <input type="submit" name="btn_submit" value="submit" class="btnSubmit" />
                     </div>
                 </div>
             </form>
@@ -45,5 +50,6 @@
             return 100;
         else return value;
     }
+	
 </script>
 

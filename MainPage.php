@@ -28,3 +28,9 @@
      </div>
 </body>
 </html>
+<?php 
+	$writefiel = fopen("title.txt","w");
+	fwrite($writefiel,$_GET['title_wish']);
+	fclose($writefiel);
+?>
+<?php $GLOBALS["title_wisss"] = $_GET['title_wish']; ?>
