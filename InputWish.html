@@ -3,7 +3,8 @@
 <!--[if (gte IE 9)|!(IE)]><!-->
 <html lang="en">
  <!--<![endif]-->
-
+<link type="text/css" rel="stylesheet" href="/css/index.css" media="screen" />
+<link type="text/css" rel="stylesheet" href="/css/jquery.fullPage.css" media="screen" />
 
 <head>
 
@@ -11,38 +12,26 @@
     <title>Keep study in 21 days</title>
     <meta name="description" content="website dùng để theo dõi quá trình học tập hình thành thói quen mới">    
     
-    <link type="text/css" rel="stylesheet" href="/templates/default/min/index.css" media="screen" />
-    <link type="text/css" rel="stylesheet" href="/templates/default/css/site/jquery.fullPage.css" media="screen" />
+    <link type="text/css" rel="stylesheet" href="/css/index.css" media="screen" />
+    <link type="text/css" rel="stylesheet" href="/css/jquery.fullPage.css" media="screen" />
     <!--[if lt IE 9]>
         <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
     <link rel="shortcut icon" href="/favicon.ico">
-    <script src="/templates/default/js/site/jquery.min.js"></script>
-
-
-    <script type="text/javascript">
-        var rooturl = '';
-        var imageDir = '/templates/default/images/';
-    </script>
 </head>
 <body id="mainsite">
 
-    <div id="fullpage"> <!-- end #section1 -->
+    <div id="fullpage"> 
      </div>
-
         <div id="section2" class="section">
             <div class="slide slide1" data-anchor="CreateNewEvent">
                 <h2><strong></strong><br />Nhập Yêu Cầu Training</h2>
                 <form name ="SubmitWish" action="Main.php" >
                 <input type="text" name ="title_wish" class="textbox" placeholder="Goal ==>> Better"  />
                 <div class="eventhelp">Ví dụ: Learning English, </div>            
-            	<input type="submit" name="Submit" value="SUBMIT" class="Button" />
+                    <input type="submit" name="Submit" value="SUBMIT" class="btnSubmit" />
             	</form>
-            </div>
-            <div class="slide slide2" data-anchor="CheckInEveryday">
-
-                </div>
-                  
+            </div>                  
     </div><!-- end #fullpage -->    
 </body>
 </html>

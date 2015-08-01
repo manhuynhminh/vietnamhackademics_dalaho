@@ -677,7 +677,7 @@ img {
 }
 #section2 {
     text-align: center;
-    background: #3bc765
+    background: #182f40
 }
 #section2 h2 {
     color: #fff;
@@ -701,6 +701,43 @@ img {
     padding: 10px;
     font-size: 11px;
     font-style: italic
+}
+#section2 {
+    padding-top: 20px
+}
+#section2 .btnSubmit {
+    font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
+    display: block;
+    margin: auto;
+    width: 180px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+    color: #fff;
+    background: #3bc765;
+    border-width: 0;
+    border-bottom: 4px solid #2ea251;
+    font-size: 22px
+}
+#section2 .btnSubmit:hover {
+    background: #2ea251;
+    height: 46px;
+    margin-top: 4px;
+    line-height: 50px
+}
+#section2-links {
+    text-align: center;
+    color: #a6a5a5;
+    padding: 10px
+}
+#section2-links a {
+    color: #a6a5a5
+}
+#section2-links a:hover {
+    color: #2ea251
 }
 .startarrow {
     width: 0;
