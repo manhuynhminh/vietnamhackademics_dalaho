@@ -677,7 +677,8 @@ img {
 }
 #section2 {
     text-align: center;
-    background: #182f40
+    background: #182f40;
+    height: 100%
 }
 #section2 h2 {
     color: #fff;
@@ -703,10 +704,11 @@ img {
     font-style: italic
 }
 #section2 {
-    padding-top: 20px
+    padding-top: 50px
 }
 #section2 .btnSubmit {
     font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
+
     display: block;
     margin: auto;
     width: 180px;
@@ -720,7 +722,8 @@ img {
     background: #3bc765;
     border-width: 0;
     border-bottom: 4px solid #2ea251;
-    font-size: 22px
+    font-size: 22px;
+    padding: 10px;
 }
 #section2 .btnSubmit:hover {
     background: #2ea251;
