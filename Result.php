@@ -46,7 +46,14 @@
 						echo "You should be try to learn :) ";  //xuat cau khuyen ran (call the advice from database)
 						}
 					else
+					{
+						$filetemp = fopen("result.txt","r");
+						$oldresult = fgets($filetemp);
+						
+						echo "Old Result: ".$oldresult."%<br/><br/>";
+						fclose($filetemp);
 						echo "Your preview result is good, but you can try to better >_>";	
+					}
 			?>
 		<br><br><br><br><br><br><br><br><br><br>
 		 <bottom> <a href="mainpage.php" text-align:bottom >Return main page</a></bottom>
