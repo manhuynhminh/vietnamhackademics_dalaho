@@ -1519,15 +1519,13 @@ div.sb-message a:visited {
     text-shadow: 1px 1px 0 #8afaac
 }
 
-#section5 .textbox {
+#section5 label {
     text-align: center;
-    border-radius: 40px;
-    -webkit-border-radius: 40px;
-    font-size: 20px;
-    width: 400px;
-    max-width: 60%;    
-    padding: 10px 20px;
-    color: #0b1ac2;
+    font-size: 25px;
+    text-wrap:normal;
+    display:block;
+    color: #4169E1;
+    margin-top: 5%;
 }
 
 #section5 {

@@ -10,17 +10,20 @@
 	<title>Result</title>
 </head>
 <body id="mainsite">
-<?php 
-	if (isset($_GET['submit_button_rate']))
-	{ 
-		echo "result today: ".$_GET['your_rate']."<br/>";
-		echo "You should be (call the advice from database)";
-	}
-	else
-		echo "Your preview result is good, but you can try to better >_>";
-	
-?>
-
+	<div id="section5" class="section">
+		<h2> Learning PHP </h2>
+		<label>
+		<?php 
+			if (isset($_GET['submit_button_rate']))
+			{ 
+				echo "result today: ".$_GET['your_rate']."<br/>";
+				echo "You should be (call the advice from database)";
+			}
+			else
+				echo "Your preview result is good, but you can try to better >_>";	
+		?>
+		</label>
+	</div>
 </body>
 
 </html>
