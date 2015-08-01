@@ -744,7 +744,7 @@ img {
 #section3 {
     text-align: center;            
     background: #182f40;
-    height: 100%
+    height: 100%;
 }
 #section3 h2 {
     color: #fff;
@@ -759,11 +759,9 @@ img {
     text-align: center;
     border-radius: 40px;
     -webkit-border-radius: 40px;
-    height: 40px;
     font-size: 20px;
     width: 400px;
-    max-width: 60%;
-    border: 0px solid #fff;
+    max-width: 60%;    
     padding: 10px 20px;
     color: #0b1ac2;
 }
@@ -773,10 +771,9 @@ img {
     background: url('../images/bg.png') no-repeat center;
 }
 
-#times a{
+#times a{    
     font-size: 32px;
-    color: #d03221;
-    padding-top: 50px;
+    color: #d03221;  
 }
 
 .startarrow {

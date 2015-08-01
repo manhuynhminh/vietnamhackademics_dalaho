@@ -10,7 +10,8 @@
 <body id="mainsite">
      <div id="section3" class="section">
         <h2>Learning Goal</h2>
-           <input type="text" name ="title_wish" class="textbox" readonly value="<?php echo $_GET['title_wish'] ?>"/>
+        <div><input type="text" name ="title_wish" class="textbox" readonly value="<?php echo $_GET['title_wish'] ?>"/></div>
+        <br/>
         <div id="times">
           <a href="hackathon.html">
 			  <?php 
