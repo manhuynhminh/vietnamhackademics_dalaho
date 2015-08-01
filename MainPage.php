@@ -8,8 +8,9 @@
                 <?php 
 					date_default_timezone_set('Asia/Ho_Chi_Minh');
 					$datesys = date('d/m/Y');
-					echo $datesys;
-				?>
+					$dataapp = (int)($datesys - date('01/08/2015'));
+					echo $dataapp;
+				?><a href="hackathon.html">Days</a>
                     <img />
                 </div>
                
