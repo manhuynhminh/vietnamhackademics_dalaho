@@ -16,21 +16,7 @@
                   $datesys = date('d/m/Y');
                   $dataapp = (int)($datesys - date('01/08/2015'));
                   echo $dataapp;
-<<<<<<< HEAD
-<<<<<<< HEAD
-              ?> days </a>
-=======
-              ?> 
-			  <br>
-			  days
->>>>>>> 53068fdaf61253c18fb136ad6c3af6e19bbb8541
-=======
-              ?> 
-			  <br>
-			  days
->>>>>>> 7317ed6628dd1aae7b767c32f038c9f451b4be33
-           </a>
-          <img />
+              ?> days </a>        
         </div>
 		<br/>
 		<div id="buttondiv">
