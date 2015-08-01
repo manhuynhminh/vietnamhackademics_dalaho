@@ -19,11 +19,11 @@
               ?> days </a>        
         </div>
 		<br/>
+		
 		<div id="buttondiv">
 			<a href="rate.html"><input type="button" name="resultbutton" value="Result" class="btnResult" /> </a>
        
-			<a href="result.php"><input type="button" name="reportbutton" value="Report" class="btnReport" />
-            
+			<a href="result.php"><input type="button" name="reportbutton" value="Report" class="btnReport" />            
 		</div>
      </div>
 </body>
@@ -34,3 +34,7 @@
 	fclose($writefiel);
 ?>
 <?php $GLOBALS["title_wisss"] = $_GET['title_wish']; ?>
+<script type="text/javascript">
+	var dataToStore = JSON.stringify(<?php echo $GLOBALS["title_wisss"] ?>);
+	localStorage.setItem('LearningTitle', dataToStore);
+</script>
