@@ -1,0 +1,15 @@
+$$$$$ GUIDE INSTALL PHP $$$$$$
+
+
+1. please turn on the IIS and make sure the localhost can run.
+2. Install the php:
+	- Extract the file php.rar
+	- Copy the folder "php" to the hard disk (C:/)
+	- open the Internet Information Services (IIS) Manager.
+	- Choose our profect.
+	- Choose Handler Mappings
+	- And add the feature FastCgiPHP.
+
+(Please check the link below to see more details "http://www.iis.net/learn/application-frameworks/install-and-configure-php-applications-on-iis/using-fastcgi-to-host-php-applications-on-iis")
+
+=======================DONE================
