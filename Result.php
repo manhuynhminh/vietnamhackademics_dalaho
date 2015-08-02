@@ -52,21 +52,25 @@
 					fclose($filetemp);
 				}
 			?>
-            <br/>
-            <label id="motivate">
-            <?php 
-				if (isset($_GET['btn_submit'])) 
-				{ 
-					echo "You should be try to learn :) ";  //xuat cau khuyen ran (call the advice from database)
-				}
-				else
-				{				
-					echo "Your preview result is good, but you can try to better >_>";	
-				}
-			?>			
-            <div id="btnDiv">
-              		<input type="button" name="resultbutton" value="Home" class="btnBack" onClick="goBack()" /> 
-            </div>
+		</label>
+            <br/><br/><br/><br/>
+		<div id="MotivateDiv">
+			<label id="motivate">
+				<?php 
+					if (isset($_GET['btn_submit'])) 
+					{ 
+						echo "You should be try to learn :) ";  //xuat cau khuyen ran (call the advice from database)
+					}
+					else
+					{				
+						echo "Your preview result is good, but you can try to better >_>";	
+					}
+				?>	
+			</label>
+		</div>
+        <div id="btnDiv">
+              	<input type="button" name="resultbutton" value="Home" class="btnBack" onClick="goBack()" /> 
+        </div>
 	</div>
 
 </body>

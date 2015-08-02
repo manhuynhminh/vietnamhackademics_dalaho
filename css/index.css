@@ -1508,25 +1508,6 @@ div.sb-message a:visited {
     height: 100%;
 }
 
-#section5 #result {
-    position: relative;
-    text-align: center;
-    font-size: 25px;
-    color: #d03221;
-    display:block;
-    float:left;
-    margin-top: 2%;
-    margin-left: 25%;
-}
-
-#section5 #motivate {
-    position: relative;
-    text-align: center;
-    font-size: 25px;
-    color: #4169E1;
-    margin-top: 1%;
-    margin-left: 5%;
-}
 
 #section5 h2 {
     position:absolute;
@@ -1538,6 +1519,42 @@ div.sb-message a:visited {
 }
 #section5 h2 strong {
     text-shadow: 1px 1px 0 #8afaac
+}
+#section5 #result {
+    position: absolute;
+    text-align: center;
+    font-size: 25px;
+    color: #d03221;
+    display:block;
+    float:left;
+    margin-top: 2%;
+    margin-left: 40%;
+}
+
+#section5 #motivate {
+    position: relative;
+    text-align: center;
+    font-size: 25px;
+    color: #4169E1;
+}
+
+#section5 #result1 {
+    position: absolute;
+    text-align: center;
+    font-size: 25px;
+    color: #d03221;
+    display:block;
+    float:left;
+    margin-top: 2%;
+    margin-left: 40%;
+}
+
+#section5 #motivate1 {
+    position: relative;
+    text-align: center;
+    font-size: 25px;
+    color: #4169E1;
+    margin-top: 1%;
 }
 
 
@@ -1562,7 +1579,7 @@ div.sb-message a:visited {
 	border-radius: 2px;
 	font-size: 20px;
 	line-height: inherit;
-	margin-top:120px; margin-left:50px;
+	margin-top:120px; margin-left:0px;
 }
 #section5 .btnBack:hover {
 	background: #d16900;
