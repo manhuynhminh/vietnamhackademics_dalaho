@@ -771,6 +771,53 @@ img {
     background: url('../images/bg.png') no-repeat center;
 }
 
+#section3 .btnResult {
+    font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
+    display: inline-block;
+    width: 150px;
+    height: 40px;
+    line-height: 30px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+    color: #dcdcbd;
+    background: #3bc765;
+    border-width: 0;
+    border-bottom: 4px solid #2ea251;
+    font-size: 22px;
+}
+#section3 .btnResult:hover {
+    background: #2ea251;
+    height: 38px;
+    margin-top: 4px;
+    line-height: 30px;
+}
+
+#section3 .btnReport {
+    font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
+    display: inline-block;    
+    width: 150px;
+    height: 40px;
+    line-height: 30px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+    color: #dcdcbd;
+    background: #3bc765;
+    border-width: 0;
+    border-bottom: 4px solid #2ea251;
+    font-size: 22px;
+    margin-left: 40px;
+}
+#section3 .btnReport:hover {
+    background: #2ea251;
+    height: 38px;
+    margin-top: 4px;
+    line-height: 30px;
+}
+
 #times a{    
     font-size: 32px;
     color: #d03221;  

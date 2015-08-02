@@ -22,6 +22,11 @@
            </a>
           <img />
         </div>
+		<br/>
+		<div id="buttondiv">
+			<input type="button" name="resultbutton" value="Result" class="btnResult" />
+			<input type="button" name="reportbutton" value="Report" class="btnReport" />
+		</div>
      </div>
 </body>
 </html>
