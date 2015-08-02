@@ -26,7 +26,7 @@
 					$valuedate = fgets($datefile);
 					if($valuedate < 1)
 					{
-						echo "Result date ".$valuedate.": ".$temp."%<br/><br/>"; 
+						echo "Result day ".$valuedate.": ".$temp."%<br/><br/>"; 
 						$filetemp = fopen("result.txt","w");
 						fwrite($filetemp,$temp);
 						fclose($filetemp);
