@@ -11,7 +11,7 @@
         <h2><?php echo $_GET['title_wish'] ?></h2>        
         <br/>
         <div id="times" color = "green">
-			 <a href="days/(<?php echo rand(1,21) ?>).txt"><?php 
+			 <?php 
                   date_default_timezone_set('Asia/Ho_Chi_Minh');
                   $datesys = date('d/m/Y');
                   $dataapp = (int)($datesys - date('01/08/2015'));
@@ -19,7 +19,7 @@
 				  $filedate = fopen("days/file_date.txt","w");
 				  fwrite($filedate,$dataapp);
 				  fclose($filedate);
-              ?> days </a>        
+              ?> days 
         </div>
 		<br/>
 		
