@@ -14,7 +14,7 @@
 			 <?php 
                   date_default_timezone_set('Asia/Ho_Chi_Minh');
                   $datesys = date('d/m/Y');
-                  $dataapp = (int)($datesys - date('01/08/2015'));
+                  $dataapp = (int)($datesys - date('03/08/2015'));
                   echo $dataapp;
 				  $filedate = fopen("days/file_date.txt","w");
 				  fwrite($filedate,$dataapp);
